@@ -26,7 +26,13 @@ Read more about this plugin on the [Creative Commons Suite plugin](http://coenja
 
 == Frequently Asked Questions ==
 
+= Where can I find a overview of the Creative Commons licenses? =
+
+Choose your [Creative Commons license](http://creativecommons.org/choose/) on the official website.
+
 == Screenshots ==
+
+1. Example of the configurations panel.
 
 == Changelog ==
 
