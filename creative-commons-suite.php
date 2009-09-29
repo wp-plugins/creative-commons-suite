@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: Creative Commons Suite
-Version: 0.1
+Version: 0.2
 Plugin URI: http://coenjacobs.net/wordpress/plugins/creative-commons-suite
 Description: 
 Author: Coen Jacobs
@@ -31,7 +31,7 @@ function cc_suite_submenu() {
 	if (isset($_REQUEST['save']) && $_REQUEST['save']) {
 		check_admin_referer('cc-suite-config');
 		
-		foreach ( array('usetargetblank', 'tagline', 'url', 'allow_commercial', 'allow_modifications', 'share_alike') as $val ) {
+		foreach ( array('usetargetblank', 'tagline', 'url', 'allow_commercial', 'allow_modifications', 'share_alike', 'style_before', 'style_after') as $val ) {
 			if ( !$_POST[$val] )
 				update_option( 'cc-suite_'.$val, '');
 			else
@@ -141,6 +141,33 @@ function cc_suite_submenu() {
 		</td>		
 	</tr>
 	<tr>
+		<th scope="row" valign="top">
+			<?php _e("Styling", "cc-suite"); ?>
+		</th>
+		<td>
+			<?php
+				if(attribute_escape(stripslashes(get_option('cc-suite_style_before'))) == null)
+				{
+					$style_before = "<p>";
+				} else {
+					$style_before = attribute_escape(stripslashes(get_option('cc-suite_style_before')));
+				}
+			?>
+			<?php _e("Element before the text:", 'cc-suite'); ?>
+			<input size="80" type="text" name="style_before" value="<?php echo $style_before; ?>" /><br />
+			<?php
+				if(attribute_escape(stripslashes(get_option('cc-suite_style_after'))) == null)
+				{
+					$style_after = "</p>";
+				} else {
+					$style_after = attribute_escape(stripslashes(get_option('cc-suite_style_after')));
+				}
+			?>
+			<?php _e("Element after the text:", 'cc-suite'); ?>
+			<input size="80" type="text" name="style_after" value="<?php echo $style_after; ?>" />
+		</td>
+	</tr>
+	<tr>
 		<td>&nbsp;</td>
 		<td>
 			<span class="submit"><input name="save" value="<?php _e("Save Changes", 'cc-suite'); ?>" type="submit" /></span>
@@ -199,7 +226,7 @@ function cc_suite_display($content='') {
 	
 	$url = "<a href=\"http://creativecommons.org/licenses/".$license."/3.0/\" ".$extra.">".$title."</a>";
 	$tagline = str_replace('%1', $url, get_option("cc-suite_tagline"));
-	$content .= "<p>".$tagline."</p>";
+	$content .= stripslashes(get_option("cc-suite_style_before")).$tagline.stripslashes(get_option("cc-suite_style_before"));
 	return $content;
 }
 
