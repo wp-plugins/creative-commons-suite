@@ -6,11 +6,11 @@ Requires at least: 2.6
 Tested up to: 2.8
 Stable tag: 0.3
 
-Makes it easy to display a link to the Creative Commons license you desire in posts.
+Makes it easy to display a link to the Creative Commons license you desire in posts and pages.
 
 == Description ==
 
-Makes it easy to display a link to the Creative Commons license you desire in posts.
+Makes it easy to display a link to the Creative Commons license you desire in posts and pages.
 
 It adds the following features:
 
