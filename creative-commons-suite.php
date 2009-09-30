@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: Creative Commons Suite
-Version: 0.2
+Version: 0.3
 Plugin URI: http://coenjacobs.net/wordpress/plugins/creative-commons-suite
 Description: 
 Author: Coen Jacobs
