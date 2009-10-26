@@ -4,7 +4,7 @@ Donate link: http://coenjacobs.net/donate
 Tags: creative commons
 Requires at least: 2.6
 Tested up to: 2.8
-Stable tag: 0.4
+Stable tag: 0.4.1
 
 Makes it easy to display a link to the Creative Commons license you desire in posts and pages.
 

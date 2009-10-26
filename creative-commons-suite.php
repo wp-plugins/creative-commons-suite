@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: Creative Commons Suite
-Version: 0.4
+Version: 0.4.1
 Plugin URI: http://coenjacobs.net/wordpress/plugins/creative-commons-suite
 Description: Makes it easy to display a link to the Creative Commons license you desire in posts and pages.
 Author: Coen Jacobs
