@@ -48,3 +48,6 @@ Choose your [Creative Commons license](http://creativecommons.org/choose/) on th
 = 0.4 =
 * Added settings menu in plugins overview
 * Added plugin description
+
+= 0.4.1 =
+* Fixed a bug regarding the styling of the text

@@ -226,7 +226,7 @@ function cc_suite_display($content='') {
 	
 	$url = "<a href=\"http://creativecommons.org/licenses/".$license."/3.0/\" ".$extra.">".$title."</a>";
 	$tagline = str_replace('%1', $url, get_option("cc-suite_tagline"));
-	$content .= stripslashes(get_option("cc-suite_style_before")).$tagline.stripslashes(get_option("cc-suite_style_before"));
+	$content .= stripslashes(get_option("cc-suite_style_before")).$tagline.stripslashes(get_option("cc-suite_style_after"));
 	return $content;
 }
 
