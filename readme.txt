@@ -3,8 +3,8 @@ Contributors: coenjacobs
 Donate link: http://coenjacobs.net/donate
 Tags: creative commons
 Requires at least: 2.6
-Tested up to: 2.8
-Stable tag: 0.4.1
+Tested up to: 2.9
+Stable tag: 0.5
 
 Makes it easy to display a link to the Creative Commons license you desire in posts and pages.
 
@@ -51,3 +51,6 @@ Choose your [Creative Commons license](http://creativecommons.org/choose/) on th
 
 = 0.4.1 =
 * Fixed a bug regarding the styling of the text
+
+= 0.5 =
+* Added a few useful links in the settings page sidebar

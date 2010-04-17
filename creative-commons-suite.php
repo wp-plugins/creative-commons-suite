@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: Creative Commons Suite
-Version: 0.4.1
+Version: 0.5
 Plugin URI: http://coenjacobs.net/wordpress/plugins/creative-commons-suite
 Description: Makes it easy to display a link to the Creative Commons license you desire in posts and pages.
 Author: Coen Jacobs
@@ -87,6 +87,17 @@ function cc_suite_submenu() {
 <div class="wrap">
 	<?php screen_icon(); ?>
 	<h2><?php _e("Creative Commons Suite Options", 'cc-suite'); ?></h2>
+	
+	<div style="float: right; width: 25%; background: #DEDEDE; color: #000">
+		<div style="padding: 10px;">
+			<b>About this plugin</b>
+			<p style="line-height: 160%;">Creative Commons Suite is developed by <a href="http://coenjacobs.net/">Coen Jacobs</a>. If you like it, please consider making a small <a href="http://coenjacobs.net/donate"><b>donation</b> to the author</a> or if you're on Twitter; <a href="http://twitter.com/coenjacobs">follow <b>@coenjacobs</b></a>!</p>
+			<b>Need support?</b>
+			<p style="line-height: 160%;">Please use the special <a href="http://wordpress.org/tags/creative-commons-suite?forum_id=10">support forum</a> for this plugin at WordPress.org for support.</p>
+		</div>
+	</div>
+	
+	<div style="float: left; width: 75%;">
 	<table class="form-table">
 	<tr>
 		<th scope="row" valign="top">
@@ -173,7 +184,8 @@ function cc_suite_submenu() {
 			<span class="submit"><input name="save" value="<?php _e("Save Changes", 'cc-suite'); ?>" type="submit" /></span>
 		</td>
 	</tr>
-</table>
+	</table>
+</div>
 
 
 </div>
